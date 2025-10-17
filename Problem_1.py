@@ -74,7 +74,7 @@ def strStr_SlidingWindow(haystack: str, needle: str) -> int:
     return -1
 
 def strStr_KMP(haystack: str, needle: str) -> int:
-    ''' Time: O(NM), Space: O(1) '''
+    ''' Time: O(N+M), Space: O(1) '''
     def lps(s):
         n = len(s)
         i = 1  # pointer in haystack
